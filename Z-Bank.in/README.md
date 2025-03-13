@@ -54,24 +54,10 @@ Follow these steps to set up and run **Z-Bank** on your local machine.
    cd Z-Bank
 Install dependencies:
 
-bash
-Copy
 npm install
-or
 
-bash
-Copy
-yarn install
-Start the development server:
-
-bash
-Copy
 npm run dev
-or
 
-bash
-Copy
-yarn dev
 Open the application:
 
 
