@@ -1,12 +1,124 @@
-# React + Vite
+# Z-Bank
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Z-Bank** is a modern, user-friendly banking application built with **React**. It allows users to manage their accounts, perform transactions (deposits, withdrawals, fund transfers), and view account details in a seamless and intuitive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Account Management**:
+  - Create new accounts.
+  - Edit account details.
+  - Delete accounts.
+- **Transactions**:
+  - Deposit funds into accounts.
+  - Withdraw funds from accounts.
+  - Transfer funds between accounts.
+- **User Interface**:
+  - Clean and responsive design.
+  - Easy navigation with a **Navbar**.
+- **State Management**:
+  - Centralized state management using **React Context API**.
+- **Modular Components**:
+  - Reusable and well-organized components for scalability.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- **Frontend**:
+  - React
+  - React Router (for navigation)
+  - CSS (for styling)
+- **Build Tool**:
+  - Vite (for fast development and bundling)
+- **State Management**:
+  - React Context API
+
+---
+
+## Getting Started
+
+Follow these steps to set up and run **Z-Bank** on your local machine.
+
+### Prerequisites
+
+- **Node.js** (v16 or higher)
+- **npm** (v8 or higher) or **yarn** (v1.22 or higher)
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/Z-Bank.git
+   cd Z-Bank
+Install dependencies:
+
+bash
+Copy
+npm install
+or
+
+bash
+Copy
+yarn install
+Start the development server:
+
+bash
+Copy
+npm run dev
+or
+
+bash
+Copy
+yarn dev
+Open the application:
+
+Visit http://localhost:5173 in your browser to view the app.
+
+Folder Structure
+Copy
+src/
+├── components/              # Reusable components
+│   ├── AccountList/         # Account list component
+│   ├── CreateAccount/       # Create account form
+│   ├── Deposit/             # Deposit funds form
+│   ├── EditAccountModal/    # Edit account modal
+│   ├── FundTransfer/        # Fund transfer form
+│   ├── HomePage/            # Home page component
+│   ├── Logout/              # Logout component
+│   ├── Navbar/              # Navigation bar
+│   ├── Withdraw/            # Withdraw funds form
+├── context/                 # Context API for state management
+│   ├── AccountContext.js    # Account context provider
+├── App.js                   # Main application component
+├── App.css                  # Global styles
+├── index.js                 # Entry point
+├── index.css                # Global styles
+Usage
+Home Page:
+
+View a list of all accounts.
+
+Edit or delete accounts.
+
+Create Account:
+
+Add a new account with a name and initial balance.
+
+Deposit:
+
+Select an account and deposit funds.
+
+Withdraw:
+
+Select an account and withdraw funds.
+
+Fund Transfer:
+
+Transfer funds between two accounts.
+
+Logout:
+
+Log out of the application (placeholder functionality).
+
