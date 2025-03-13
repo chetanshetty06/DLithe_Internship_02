@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
-import './TodoList.css';
+import React, { useState } from "react";
+import "./TodoList.css";
 
 const TodoList = () => {
   const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState('');
+  const [newTask, setNewTask] = useState("");
 
   const addTask = () => {
-    if (newTask.trim() !== '') {
+    if (newTask.trim() !== "") {
       setTasks([...tasks, { id: Date.now(), text: newTask, completed: false }]);
-      setNewTask('');
+      setNewTask("");
     }
   };
 
   const deleteTask = (id) => {
-    setTasks(tasks.map(task => 
-      task.id === id ? { ...task, completed: !task.completed } : task
-    ));
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    );
   };
 
   return (
@@ -31,28 +33,16 @@ const TodoList = () => {
         <button onClick={addTask}>Add</button>
       </div>
       <div className="tasks">
-        {tasks.map(task => (
-          <div key={task.id} className={`task ${task.completed ? 'completed' : ''}`}>
+        {tasks.map((task) => (
+          <div
+            key={task.id}
+            className={`task ${task.completed ? "completed" : ""}`}
+          >
             <span>{task.text}</span>
             <button onClick={() => deleteTask(task.id)}>🗑️</button>
           </div>
         ))}
       </div>
-      {/* <div className="project-video">
-        <h2>Edit Project Video</h2>
-        <div className="video-task">
-          <span>Upload Project Video</span>
-          <input type="checkbox" />
-        </div>
-        <div className="video-task">
-          <span>Record New Video</span>
-          <input type="checkbox" />
-        </div>
-        <div className="video-task">
-          <span>Thanks for Watching</span>
-          <input type="checkbox" />
-        </div>
-      </div> */}
     </div>
   );
 };
