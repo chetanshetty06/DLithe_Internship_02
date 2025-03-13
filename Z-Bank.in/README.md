@@ -74,51 +74,6 @@ Copy
 yarn dev
 Open the application:
 
-Visit http://localhost:5173 in your browser to view the app.
 
-Folder Structure
-Copy
-src/
-├── components/              # Reusable components
-│   ├── AccountList/         # Account list component
-│   ├── CreateAccount/       # Create account form
-│   ├── Deposit/             # Deposit funds form
-│   ├── EditAccountModal/    # Edit account modal
-│   ├── FundTransfer/        # Fund transfer form
-│   ├── HomePage/            # Home page component
-│   ├── Logout/              # Logout component
-│   ├── Navbar/              # Navigation bar
-│   ├── Withdraw/            # Withdraw funds form
-├── context/                 # Context API for state management
-│   ├── AccountContext.js    # Account context provider
-├── App.js                   # Main application component
-├── App.css                  # Global styles
-├── index.js                 # Entry point
-├── index.css                # Global styles
-Usage
-Home Page:
 
-View a list of all accounts.
-
-Edit or delete accounts.
-
-Create Account:
-
-Add a new account with a name and initial balance.
-
-Deposit:
-
-Select an account and deposit funds.
-
-Withdraw:
-
-Select an account and withdraw funds.
-
-Fund Transfer:
-
-Transfer funds between two accounts.
-
-Logout:
-
-Log out of the application (placeholder functionality).
 
