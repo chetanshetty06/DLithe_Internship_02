@@ -17,4 +17,6 @@ Click the Decrement button to decrease the count.
 
 The current count value will be displayed dynamically.
 
+To run --> npm start
+
 ***********************************************************************************************************
