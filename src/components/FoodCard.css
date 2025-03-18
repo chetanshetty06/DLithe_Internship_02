@@ -1,0 +1,30 @@
+.food-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.food-card h3 {
+  margin: 10px 0;
+}
+
+.food-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.food-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
